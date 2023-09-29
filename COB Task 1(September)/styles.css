@@ -1,0 +1,166 @@
+*{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-image: linear-gradient(
+  234deg,
+  hsl(240deg 100% 50%) 0%,
+  hsl(226deg 100% 50%) 11%,
+  hsl(220deg 100% 50%) 14%,
+  hsl(215deg 100% 50%) 16%,
+  hsl(211deg 100% 50%) 17%,
+  hsl(207deg 100% 50%) 18%,
+  hsl(203deg 100% 50%) 20%,
+  hsl(200deg 100% 50%) 22%,
+  hsl(201deg 100% 60%) 26%,
+  hsl(203deg 100% 71%) 30%,
+  hsl(203deg 95% 78%) 37%,
+  hsl(202deg 81% 84%) 47%,
+  hsl(200deg 53% 90%) 74%
+);
+}
+.form{
+    background-color: white;
+    padding: 10px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.title{
+    font-size: 25px;
+    font-weight: 400;
+    padding: 2%;
+}
+.details{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.inputbox{
+    padding:10px;   
+}
+.inputbox input{
+    height: 32px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-indent:1%;
+    
+}
+.inputbox input:hover{
+   border: solid steelblue;
+    
+}
+.inputbox input::placeholder{
+   padding: 5%;
+    }
+.checkbox{
+    padding-left:4%;
+    margin-bottom:5%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.Gbtn{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+.Gbtn button{
+    display: flex;
+    height: 6vh;
+    width:60%;
+    border-radius: 8px;
+    padding:2%;
+    font-size:2vh;
+    justify-content: center;
+    align-items: center;
+}
+.Gbtn button:hover{
+    display: flex;
+    height: 6.1vh;
+    width:62%;
+    border-radius: 8px;
+    font-weight: 500;
+    padding:2%;
+    font-size: 2.2vh;
+    justify-content: center;
+    align-items: center;
+}
+.button input{
+     color:white;
+     font-weight: 500;
+     font-size: 16px;
+     height:6vh;
+     width: 60%;
+     border-radius: 8px;
+  background-color: #0066b2;
+}
+#btn:hover{
+  background-color:#00008B;
+  width: 62%;
+  height:6.1vh;
+  font-weight: 500;
+  font-size: 18px;
+}
+label{
+    font-weight:500;
+    font-size: 16px;
+}
+.Gbtn img{
+    padding: 4px;
+    height: 24px;
+    width: 24px;
+}
+.hrline p{
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    color: rgb(127, 127, 127);
+}
+.hrline p::before{
+    content: " ";
+    width: 25%;
+    height: 0.5px;
+    display: block;
+    background-color: rgb(127, 127, 127);
+    position: absolute;
+    top:60%;
+    left: 22%;
+}
+.hrline p::after{
+    content: " ";
+    width: 25%;
+    height: 0.5px;
+    display: block;
+    background-color:rgb(127, 127, 127);
+    position: absolute;
+    top:60%;
+    right: 22%;
+}
+@media (max-width:600px) {
+    .details{
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .form{
+        height: fit-content;
+        width: fit-content;
+    }
+    
+}
